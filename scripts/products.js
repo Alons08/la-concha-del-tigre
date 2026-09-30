@@ -6,7 +6,7 @@ const products = [
         name: "Ceviche Simple",
         category: "ceviches",
         price: 25,
-        description: "Trozos de pescado blanco, choclo, camote, leche de tigre y cancha.",
+        description: "Trozos de pescado blanco, choclo, camote, yuca y cancha.",
         image: "./images/menu/ceviche-simple.jpg",
         available: true
     },
@@ -24,7 +24,7 @@ const products = [
         name: "Ceviche de langostino",
         category: "ceviches",
         price: 30,
-        description: "Langostinos frescos, choclo, camote, leche de tigre y cancha.",
+        description: "Langostinos frescos, choclo, camote, yuca y cancha.",
         image: "./images/menu/ceviche-de-langostino.jpg",
         available: true
     },
@@ -161,7 +161,7 @@ const products = [
         category: "sudados",
         price: 25,
         description: "Tramboyo entero, cebolla, tomate, ají amarillo en juliana, yuca y porción de arroz.",
-        image: "./images/menu/sudado-de-tramboyo.jpg",
+        image: "./images/menu/sudado.jpg",
         available: true
     },
     {
@@ -170,7 +170,7 @@ const products = [
         category: "sudados",
         price: 25,
         description: "Filete de toyo, cebolla, tomate, ají amarillo en juliana, yuca y porción de arroz.",
-        image: "./images/menu/sudado-de-toyo.jpg",
+        image: "./images/menu/sudado.jpg",
         available: true
     },
     {
@@ -179,7 +179,7 @@ const products = [
         category: "sudados",
         price: 25,
         description: "Cabrilla entera, cebolla, tomate, ají amarillo en juliana, yuca y porción de arroz.",
-        image: "./images/menu/sudado-de-cabrilla.jpg",
+        image: "./images/menu/sudado.jpg",
         available: true
     },
     {
