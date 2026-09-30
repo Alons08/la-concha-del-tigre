@@ -228,6 +228,18 @@ body {
     transform: translateY(-1px);
 }
 
+.menu-filters-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 10px 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-scroll-btn {
+    display: none; /* Oculto por defecto en móvil y tablet */
+}
+
 .menu-filters {
     display: flex;
     justify-content: flex-start;
@@ -236,9 +248,9 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     gap: 12px;
-    margin: 15px auto 25px;
-    padding: 8px 15px 14px;
-    max-width: 100%;
+    margin: 0;
+    padding: 8px 10px 14px;
+    width: 100%;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
@@ -258,6 +270,70 @@ body {
 .menu-filters::-webkit-scrollbar-thumb {
     background: #17a2b8;
     border-radius: 10px;
+}
+
+/* Exclusivo para Vista Laptop y PC (Desktop >= 992px) */
+@media (min-width: 992px) {
+    .menu-filters-wrapper {
+        padding: 0 48px; /* Espacio para las flechas laterales */
+    }
+
+    .filter-scroll-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: calc(50% - 6px); /* Alineado exactamente al centro de las pastillas */
+        transform: translateY(-50%);
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: var(--white);
+        border: 1.5px solid #17a2b8;
+        color: #17a2b8;
+        font-size: 0.95rem;
+        cursor: pointer;
+        z-index: 5;
+        box-shadow: 0 4px 12px rgba(23, 162, 184, 0.18);
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        user-select: none;
+    }
+
+    .filter-scroll-btn i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+    .filter-scroll-btn.left {
+        left: 2px;
+    }
+
+    .filter-scroll-btn.left i {
+        margin-right: 2px; /* Centrado óptico del chevron izquierdo */
+    }
+
+    .filter-scroll-btn.right {
+        right: 2px;
+    }
+
+    .filter-scroll-btn.right i {
+        margin-left: 2px; /* Centrado óptico del chevron derecho */
+    }
+
+    .filter-scroll-btn:hover:not(.hidden) {
+        background: #17a2b8;
+        color: var(--white);
+        box-shadow: 0 6px 16px rgba(23, 162, 184, 0.35);
+        transform: translateY(-50%) scale(1.08);
+    }
+
+    .filter-scroll-btn.hidden {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-50%) scale(0.8);
+    }
 }
 
 .filter-btn {

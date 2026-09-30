@@ -59,22 +59,30 @@
                     <input type="search" id="menu-search" placeholder="Buscar producto por nombre..." aria-label="Buscar producto por nombre">
                 </div>
 
-                <div class="menu-filters">
-                    <button class="filter-btn active" data-category="all">Todos</button>
-                    <button class="filter-btn" data-category="ceviches">Ceviches</button>
-                    <button class="filter-btn" data-category="leche-de-tigre">Leche de tigre</button>
-                    <button class="filter-btn" data-category="chicharrones">Chicharrones</button>
-                    <button class="filter-btn" data-category="combinados">Combinados</button>
-                    <button class="filter-btn" data-category="trios">Trios</button>
-                    <button class="filter-btn" data-category="sudados">Sudados</button>
-                    <button class="filter-btn" data-category="parihuelas">Parihuelas</button>
-                    <button class="filter-btn" data-category="guisadas">Guisadas</button>
-                    <button class="filter-btn" data-category="arroces">Arroces</button>
-                    <button class="filter-btn" data-category="fuentes">Fuentes</button>
-                    <button class="filter-btn" data-category="platos-a-la-carta">Platos a la carta</button>
-                    <button class="filter-btn" data-category="ronda-marina">Ronda marina</button>
-                    <button class="filter-btn" data-category="duos">Duos</button>
-                    <button class="filter-btn" data-category="bebidas">Bebidas</button>
+                <div class="menu-filters-wrapper">
+                    <button type="button" class="filter-scroll-btn left" id="filter-scroll-left" aria-label="Desplazar a la izquierda">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="menu-filters" id="menu-filters">
+                        <button class="filter-btn active" data-category="all">Todos</button>
+                        <button class="filter-btn" data-category="ceviches">Ceviches</button>
+                        <button class="filter-btn" data-category="leche-de-tigre">Leche de tigre</button>
+                        <button class="filter-btn" data-category="chicharrones">Chicharrones</button>
+                        <button class="filter-btn" data-category="combinados">Combinados</button>
+                        <button class="filter-btn" data-category="trios">Trios</button>
+                        <button class="filter-btn" data-category="sudados">Sudados</button>
+                        <button class="filter-btn" data-category="parihuelas">Parihuelas</button>
+                        <button class="filter-btn" data-category="guisadas">Guisadas</button>
+                        <button class="filter-btn" data-category="arroces">Arroces</button>
+                        <button class="filter-btn" data-category="fuentes">Fuentes</button>
+                        <button class="filter-btn" data-category="platos-a-la-carta">Platos a la carta</button>
+                        <button class="filter-btn" data-category="ronda-marina">Ronda marina</button>
+                        <button class="filter-btn" data-category="duos">Duos</button>
+                        <button class="filter-btn" data-category="bebidas">Bebidas</button>
+                    </div>
+                    <button type="button" class="filter-scroll-btn right" id="filter-scroll-right" aria-label="Desplazar a la derecha">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
             
