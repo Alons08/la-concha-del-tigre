@@ -3,565 +3,559 @@ const products = [
     // --- Ceviches ---
     {
         id: 1,
-        name: "Leche de tigre",
+        name: "Ceviche Simple",
         category: "ceviches",
-        price: 20,
-        description: "Trozos de pescado blanco, choclo, cancha, chifles y chicharrón de pota.",
-        image: "./images/menu/leche-de-tigre.jpg",
+        price: 25,
+        description: "Trozos de pescado blanco, choclo, camote, leche de tigre y cancha.",
+        image: "./images/menu/ceviche-simple.jpg",
         available: true
     },
     {
         id: 2,
-        name: "Ceviche carretillero de pescado",
+        name: "Ceviche Mixto",
         category: "ceviches",
-        price: 20,
-        description: "Pescado blanco, choclo, camote, chicharrón de pota y chifles.",
-        image: "./images/menu/ceviche-carretillero-de-pescado.jpg",
-        available: true
-    },
-    {
-        id: 3,
-        name: "Ceviche carretillero de pota",
-        category: "ceviches",
-        price: 17,
-        description: "Pota fresca, choclo, camote, chicharrón de pota y chifles.",
-        image: "./images/menu/ceviche-carretillero-de-pota.jpg",
-        available: true
-    },
-    {
-        id: 4,
-        name: "Ceviche mixto",
-        category: "ceviches",
-        price: 45,
-        description: "Pescado blanco, pulpo, langostino, pota, choclo, cancha, camote, chifles.",
+        price: 28,
+        description: "Trozos de pescado blanco, pulpo, langostino, pota, choclo, camote y cancha.",
         image: "./images/menu/ceviche-mixto.jpg",
         available: true
     },
     {
-        id: 5,
-        name: "Ceviche de pescado",
+        id: 3,
+        name: "Ceviche de langostino",
         category: "ceviches",
-        price: 40,
-        description: "Pescado blanco 250gr, choclo, camote, leche de tigre, cancha.",
-        image: "./images/menu/ceviche-pescado.jpg",
+        price: 30,
+        description: "Langostinos frescos, choclo, camote, leche de tigre y cancha.",
+        image: "./images/menu/ceviche-de-langostino.jpg",
         available: true
     },
     {
-        id: 6,
-        name: "Ceviche en salsa de rocoto",
+        id: 4,
+        name: "Ceviche de Conchas Negras",
         category: "ceviches",
-        price: 35,
-        description: "Pescado blanco 250gr, choclo, camote, leche de tigre, cancha, en salsa especial de rocoto.",
-        image: "./images/menu/ceviche-en-salsa-de-rocoto.jpg",
+        price: 30,
+        description: "Conchas negras frescas, cebolla, choclo, camote y cancha.",
+        image: "./images/menu/ceviche-de-conchas-negras.jpg",
+        available: true
+    },
+
+    // --- Leche de tigre ---
+    {
+        id: 10,
+        name: "Leche de Tigre Simple",
+        category: "leche-de-tigre",
+        price: 13,
+        description: "Trozos de pescado blanco, choclo, chifle, cancha y chicharrón de pota.",
+        image: "./images/menu/leche-de-tigre-simple.jpg",
         available: true
     },
     {
-        id: 7,
-        name: "Ceviche puerto 28",
-        category: "ceviches",
-        price: 50,
-        description: "Pescado blanco, pulpo, lapas, bañadas en leche de tigre especial de casa.",
-        image: "./images/menu/ceviche-puerto-28.jpg",
+        id: 11,
+        name: "Leche de Tigre Mixta",
+        category: "leche-de-tigre",
+        price: 15,
+        description: "Pescado blanco, mixtura de mariscos, choclo, chifle, cancha y chicharrón de pota.",
+        image: "./images/menu/leche-de-tigre-mixta.jpg",
         available: true
     },
     {
-        id: 8,
-        name: "Ceviche norteño",
-        category: "ceviches",
-        price: 35,
-        description: "Pescado blanco preparado al estilo norteño, yuca, chifles, choclo, cancha.",
-        image: "./images/menu/ceviche-norteno.jpg",
+        id: 12,
+        name: "Leche Pantera",
+        category: "leche-de-tigre",
+        price: 18,
+        description: "Conchas negras, pescado blanco, choclo, chifle, cancha y chicharrón de pota.",
+        image: "./images/menu/leche-pantera.jpg",
         available: true
     },
     {
-        id: 9,
-        name: "Causa acevichada",
-        category: "ceviches",
+        id: 13,
+        name: "Copon Tigre",
+        category: "leche-de-tigre",
+        price: 20,
+        description: "Copón de leche de tigre especial con pescado, mariscos, cancha y chicharrón de pota.",
+        image: "./images/menu/copon-tigre.jpg",
+        available: true
+    },
+
+    // --- Chicharrones ---
+    {
+        id: 20,
+        name: "Chicharrón de Pescado",
+        category: "chicharrones",
+        price: 30,
+        description: "Trozos de pescado blanco crocante, yuca frita, salsa criolla y tártara.",
+        image: "./images/menu/chicharron-pescado.jpg",
+        available: true
+    },
+    {
+        id: 21,
+        name: "Chicharrón Mixto",
+        category: "chicharrones",
+        price: 33,
+        description: "Trozos de pescado blanco y mixtura de mariscos crocantes, yuca frita, salsa criolla y tártara.",
+        image: "./images/menu/chicharron-mixto.jpg",
+        available: true
+    },
+    {
+        id: 22,
+        name: "Chicharrón de Langostino",
+        category: "chicharrones",
+        price: 33,
+        description: "Langostinos crocantes, yuca frita, salsa criolla y tártara.",
+        image: "./images/menu/chicharron-de-langostino.jpg",
+        available: true
+    },
+
+    // --- Combinados ---
+    {
+        id: 30,
+        name: "Combinado",
+        category: "combinados",
+        price: 12,
+        description: "Ceviche + Tallarín + Papa a la Huancaína.",
+        image: "./images/menu/combinado.jpg",
+        available: true
+    },
+    {
+        id: 31,
+        name: "Combinado Especial",
+        category: "combinados",
+        price: 15,
+        description: "Ceviche + Patita + Tallarín + Papa a la Huancaína.",
+        image: "./images/menu/combinado-especial.jpg",
+        available: true
+    },
+
+    // --- Trios ---
+    {
+        id: 40,
+        name: "Ceviche + Arroz con Mariscos + Chicharrón",
+        category: "trios",
+        price: 42,
+        description: "Combinación de ceviche, arroz con mariscos y chicharrón de pescado.",
+        image: "./images/menu/ceviche-chicharron-arroz-mariscos.jpg",
+        available: true
+    },
+    {
+        id: 41,
+        name: "Ceviche + Chaufa de Mariscos + Chicharrón",
+        category: "trios",
+        price: 45,
+        description: "Combinación de ceviche, chaufa de mariscos y chicharrón de pescado.",
+        image: "./images/menu/ceviche-chicharron-chaufa-mariscos.jpg",
+        available: true
+    },
+    {
+        id: 42,
+        name: "Arroz con Mariscos + Chaufa de Mariscos + Chicharrón",
+        category: "trios",
+        price: 45,
+        description: "Combinación de arroz con mariscos, chaufa de mariscos y chicharrón de pescado.",
+        image: "./images/menu/arroz-mariscos-chaufa-mariscos-chicharron.jpg",
+        available: true
+    },
+
+    // --- Sudados ---
+    {
+        id: 50,
+        name: "Sudado de Tramboyo",
+        category: "sudados",
         price: 25,
-        description: "Causa rellena con ceviche montado.",
-        image: "./images/menu/causa-acevichada.jpg",
+        description: "Tramboyo entero, cebolla, tomate, ají amarillo en juliana, yuca y porción de arroz.",
+        image: "./images/menu/sudado-de-tramboyo.jpg",
+        available: true
+    },
+    {
+        id: 51,
+        name: "Sudado de Toyo",
+        category: "sudados",
+        price: 25,
+        description: "Filete de toyo, cebolla, tomate, ají amarillo en juliana, yuca y porción de arroz.",
+        image: "./images/menu/sudado-de-toyo.jpg",
+        available: true
+    },
+    {
+        id: 52,
+        name: "Sudado de Cabrilla",
+        category: "sudados",
+        price: 25,
+        description: "Cabrilla entera, cebolla, tomate, ají amarillo en juliana, yuca y porción de arroz.",
+        image: "./images/menu/sudado-de-cabrilla.jpg",
+        available: true
+    },
+
+    // --- Parihuelas ---
+    {
+        id: 60,
+        name: "Parihuela de Toyo",
+        category: "parihuelas",
+        price: 28,
+        description: "Filete de toyo, mariscos, cangrejo, yuca y porción de arroz.",
+        image: "./images/menu/parihuela-de-toyo.jpg",
+        available: true
+    },
+    {
+        id: 61,
+        name: "Parihuela de Cabrilla",
+        category: "parihuelas",
+        price: 28,
+        description: "Cabrilla entera, mariscos, cangrejo, yuca y porción de arroz.",
+        image: "./images/menu/parihuela-de-cabrilla.jpg",
+        available: true
+    },
+    {
+        id: 62,
+        name: "Parihuela de Tramboyo",
+        category: "parihuelas",
+        price: 28,
+        description: "Tramboyo entero, mariscos, cangrejo, yuca y porción de arroz.",
+        image: "./images/menu/parihuela-de-tramboyo.jpg",
+        available: true
+    },
+
+    // --- Guisadas ---
+    {
+        id: 70,
+        name: "Guisada de Toyo",
+        category: "guisadas",
+        price: 25,
+        description: "Filete de toyo en guiso criollo tradicional, yuca y porción de arroz.",
+        image: "./images/menu/guisada-de-toyo.jpg",
+        available: true
+    },
+    {
+        id: 71,
+        name: "Guisada Mixta",
+        category: "guisadas",
+        price: 30,
+        description: "Pescado y mixtura de mariscos en guiso criollo, yuca y porción de arroz.",
+        image: "./images/menu/guisada-mixta.jpg",
         available: true
     },
 
     // --- Arroces ---
     {
-        id: 20,
-        name: "Arroz con mariscos",
+        id: 80,
+        name: "Arroz con Mariscos",
         category: "arroces",
-        price: 35,
-        description: "Arroz con mariscos arisotado en salsa especial de la casa.",
+        price: 30,
+        description: "Arroz con mixtura de mariscos en salsa criolla especial.",
         image: "./images/menu/arroz-con-mariscos.jpg",
         available: true
     },
     {
-        id: 21,
-        name: "Arroz con langostinos",
+        id: 81,
+        name: "Arroz con Langostino",
         category: "arroces",
-        price: 35,
-        description: "Arroz con langostinos arisotado en salsa especial de la casa.",
+        price: 30,
+        description: "Arroz aromatizado con frescos langostinos y especias de la casa.",
         image: "./images/menu/arroz-con-langostinos.jpg",
         available: true
     },
     {
-        id: 22,
-        name: "Chaufa de mariscos",
+        id: 82,
+        name: "Chaufa de Mariscos",
         category: "arroces",
-        price: 35,
-        description: "Mariscos, cebolla china todo al wok.",
+        price: 30,
+        description: "Arroz salteado al wok con mixtura de mariscos y cebolla china.",
         image: "./images/menu/chaufa-de-mariscos.jpg",
         available: true
     },
     {
-        id: 23,
-        name: "Chaufa de pescado",
+        id: 83,
+        name: "Chaufa de Pescado",
         category: "arroces",
-        price: 35,
-        description: "Chicharrón de pescado, cebolla china, todo al wok.",
+        price: 30,
+        description: "Arroz salteado al wok con chicharrón de pescado y cebolla china.",
         image: "./images/menu/chaufa-pescado.jpg",
         available: true
     },
-    {
-        id: 24,
-        name: "Chaufa de langostinos",
-        category: "arroces",
-        price: 35,
-        description: "Langostinos, cebolla china, todo al wok.",
-        image: "./images/menu/chaufa-de-langostinos.jpg",
-        available: true
-    }
-    ,
-    // --- Calientes ---
-    {
-        id: 30,
-        name: "Sudado",
-        category: "calientes",
-        price: 35,
-        description: "Cabrilla, cangrejo, mariscos, cebolla, tomate, ají amarillo en juliana, yuca, porción de arroz.",
-        image: "./images/menu/sudado.jpg",
-        available: true
-    },
-    {
-        id: 31,
-        name: "Parihuela",
-        category: "calientes",
-        price: 40,
-        description: "Cabrilla, cangrejo, mariscos, yuca, porción de arroz.",
-        image: "./images/menu/parihuela.jpg",
-        available: true
-    },
-    {
-        id: 32,
-        name: "Chicharrón de pota",
-        category: "calientes",
-        price: 20,
-        description: "250gr de chicharrón de pota.",
-        image: "./images/menu/chicharron-pota.jpg",
-        available: true
-    },
-    {
-        id: 38,
-        name: "Chicharrón de pescado",
-        category: "calientes",
-        price: 25,
-        description: "250gr de chicharrón de pescado.",
-        image: "./images/menu/chicharron-pescado.jpg",
-        available: true
-    },
-    {
-        id: 33,
-        name: "Jalea mixta",
-        category: "calientes",
-        price: 45,
-        description: "Pescado, pota, langostinos, yuca, salsa criolla.",
-        image: "./images/menu/jalea-mixta.jpg",
-        available: true
-    },
-    {
-        id: 34,
-        name: "Pescado frito",
-        category: "calientes",
-        price: 25,
-        description: "Cabrilla frita, salsa criolla. Yuca, porción de arroz.",
-        image: "./images/menu/cabrilla-frita.jpg",
-        available: true
-    },
-    {
-        id: 35,
-        name: "Pulpo anticuchero",
-        category: "calientes",
-        price: 45,
-        description: "Pulpo salteado en salsa anticuchera acompañado de papitas coctel salteadas en salsa al ajo y mantequilla.",
-        image: "./images/menu/pulpo-anticuchero.jpg",
-        available: true
-    },
-    {
-        id: 36,
-        name: "Saltado de mariscos",
-        category: "calientes",
-        price: 38,
-        description: "Cebolla, tomate, mariscos, todo al wok y porción de arroz.",
-        image: "./images/menu/saltado-de-mariscos.jpg",
-        available: true
-    },
-    {
-        id: 37,
-        name: "Chilcano especial",
-        category: "calientes",
-        price: 20,
-        description: "Chilcano de pescado + cangrejo.",
-        image: "./images/menu/chilcano-especial.jpg",
-        available: true
-    }
-    ,
-    // --- Duos ---
-    {
-        id: 70,
-        name: "Ceviche + chicharrón",
-        category: "duos",
-        price: 30,
-        description: "Combinación de ceviche y chicharrón.",
-        image: "./images/menu/ceviche-chicharron.jpg",
-        available: true
-    },
-    {
-        id: 71,
-        name: "Ceviche + arroz chaufa de mariscos",
-        category: "duos",
-        price: 30,
-        description: "Ceviche acompañado de arroz chaufa de mariscos.",
-        image: "./images/menu/ceviche-chaufa-mariscos.jpg",
-        available: true
-    },
-    {
-        id: 72,
-        name: "Ceviche + arroz con marisco",
-        category: "duos",
-        price: 30,
-        description: "Ceviche acompañado de arroz con marisco.",
-        image: "./images/menu/ceviche-arroz-marisco.jpg",
-        available: true
-    },
-    {
-        id: 73,
-        name: "Ceviche + causa",
-        category: "duos",
-        price: 30,
-        description: "Ceviche acompañado de causa.",
-        image: "./images/menu/ceviche-causa.jpg",
-        available: true
-    },
-    {
-        id: 74,
-        name: "Ceviche + pulpo anticuchero",
-        category: "duos",
-        price: 35,
-        description: "Ceviche acompañado de pulpo anticuchero.",
-        image: "./images/menu/ceviche-pulpo-anticuchero.jpg",
-        available: true
-    },
-    {
-        id: 75,
-        name: "Pulpo anticuchero + causa",
-        category: "duos",
-        price: 35,
-        description: "Pulpo anticuchero acompañado de causa.",
-        image: "./images/menu/pulpo-anticuchero-causa.jpg",
-        available: true
-    },
-    {
-        id: 76,
-        name: "Pulpo anticuchero + arroz con marisco",
-        category: "duos",
-        price: 35,
-        description: "Pulpo anticuchero acompañado de arroz con marisco.",
-        image: "./images/menu/pulpo-anticuchero-arroz-marisco.jpg",
-        available: true
-    },
-    {
-        id: 77,
-        name: "Pulpo anticuchero + arroz chaufa de mariscos",
-        category: "duos",
-        price: 35,
-        description: "Pulpo anticuchero acompañado de arroz chaufa de mariscos.",
-        image: "./images/menu/pulpo-anticuchero-chaufa-mariscos.jpg",
-        available: true
-    }
-    ,
-    // --- Trios ---
+
+    // --- Fuentes ---
     {
         id: 90,
-        name: "Ceviche + chicharrón + arroz con mariscos",
-        category: "trios",
-        price: 40,
-        description: "Combinación de ceviche, chicharrón y arroz con mariscos.",
-        image: "./images/menu/ceviche-chicharron-arroz-mariscos.jpg",
+        name: "Fuente de Ceviche Simple",
+        category: "fuentes",
+        price: 55,
+        description: "Porción familiar de ceviche de pescado blanco con sus guarniciones.",
+        image: "./images/menu/fuente-de-ceviche-simple.jpg",
         available: true
     },
     {
         id: 91,
-        name: "Ceviche + chicharrón + chaufa de mariscos",
-        category: "trios",
-        price: 40,
-        description: "Combinación de ceviche, chicharrón y chaufa de mariscos.",
-        image: "./images/menu/ceviche-chicharron-chaufa-mariscos.jpg",
+        name: "Fuente de Ceviche Mixto",
+        category: "fuentes",
+        price: 65,
+        description: "Porción familiar de ceviche mixto con pescado y mariscos.",
+        image: "./images/menu/fuente-de-ceviche-mixto.jpg",
         available: true
     },
     {
         id: 92,
-        name: "Ceviche + chicharrón + causa",
-        category: "trios",
-        price: 40,
-        description: "Combinación de ceviche, chicharrón y causa.",
-        image: "./images/menu/ceviche-chicharron-causa.jpg",
+        name: "Fuente de Chicharrón de Pescado",
+        category: "fuentes",
+        price: 60,
+        description: "Porción familiar de chicharrón de pescado con yucas y salsa criolla.",
+        image: "./images/menu/fuente-de-chicharron-de-pescado.jpg",
         available: true
     },
     {
         id: 93,
-        name: "Ceviche + arroz con mariscos + chaufa de mariscos",
-        category: "trios",
-        price: 40,
-        description: "Combinación de ceviche, arroz con mariscos y chaufa de mariscos.",
-        image: "./images/menu/ceviche-arroz-mariscos-chaufa-mariscos.jpg",
+        name: "Fuente de Chicharrón Mixto",
+        category: "fuentes",
+        price: 65,
+        description: "Porción familiar de chicharrón mixto con yucas y salsa criolla.",
+        image: "./images/menu/fuente-de-chicharron-mixto.jpg",
         available: true
     },
     {
         id: 94,
-        name: "Ceviche + causa + arroz con mariscos",
-        category: "trios",
-        price: 40,
-        description: "Combinación de ceviche, causa y arroz con mariscos.",
-        image: "./images/menu/ceviche-causa-arroz-mariscos.jpg",
+        name: "Fuente de Arroz con Mariscos",
+        category: "fuentes",
+        price: 65,
+        description: "Porción familiar de arroz con mariscos especial de la casa.",
+        image: "./images/menu/fuente-de-arroz-con-mariscos.jpg",
         available: true
     },
     {
         id: 95,
-        name: "Ceviche + causa + chaufa de mariscos",
-        category: "trios",
-        price: 40,
-        description: "Combinación de ceviche, causa y chaufa de mariscos.",
-        image: "./images/menu/ceviche-causa-chaufa-mariscos.jpg",
+        name: "Fuente de Chaufa de Mariscos",
+        category: "fuentes",
+        price: 65,
+        description: "Porción familiar de chaufa de mariscos preparado al wok.",
+        image: "./images/menu/fuente-de-chaufa-de-mariscos.jpg",
+        available: true
+    },
+
+    // --- Platos a la Carta ---
+    {
+        id: 100,
+        name: "Bisteck",
+        category: "platos-a-la-carta",
+        price: 25,
+        description: "Filete de bistec a la plancha, acompañado de papas fritas y arroz.",
+        image: "./images/menu/bisteck.jpg",
         available: true
     },
     {
-        id: 96,
-        name: "Ceviche + causa + pulpo anticuchero",
-        category: "trios",
-        price: 45,
-        description: "Combinación de ceviche, causa y pulpo anticuchero.",
-        image: "./images/menu/ceviche-causa-pulpo-anticuchero.jpg",
+        id: 101,
+        name: "Pollo a la Plancha",
+        category: "platos-a-la-carta",
+        price: 25,
+        description: "Filete de pechuga a la plancha con papas fritas, ensalada y arroz.",
+        image: "./images/menu/pechuga-a-la-plancha.jpg",
         available: true
     },
     {
-        id: 97,
-        name: "Ceviche + chicharrón + pulpo anticuchero",
-        category: "trios",
-        price: 45,
-        description: "Combinación de ceviche, chicharrón y pulpo anticuchero.",
-        image: "./images/menu/ceviche-chicharron-pulpo-anticuchero.jpg",
+        id: 102,
+        name: "Pollo Saltado",
+        category: "platos-a-la-carta",
+        price: 25,
+        description: "Trozos de pollo salteados al wok con cebolla, tomate, papas y arroz.",
+        image: "./images/menu/lomo-saltado-pollo.jpg",
         available: true
     },
     {
-        id: 98,
-        name: "Ceviche + arroz con mariscos + pulpo anticuchero",
-        category: "trios",
-        price: 45,
-        description: "Combinación de ceviche, arroz con mariscos y pulpo anticuchero.",
-        image: "./images/menu/ceviche-arroz-mariscos-pulpo-anticuchero.jpg",
+        id: 103,
+        name: "Lomo Saltado",
+        category: "platos-a-la-carta",
+        price: 25,
+        description: "Trozos de carne salteados al wok con cebolla, tomate, papas fritas y arroz.",
+        image: "./images/menu/lomo-saltado.jpg",
         available: true
     },
     {
-        id: 99,
-        name: "Ceviche + chaufa de mariscos + pulpo anticuchero",
-        category: "trios",
-        price: 45,
-        description: "Combinación de ceviche, chaufa de mariscos y pulpo anticuchero.",
-        image: "./images/menu/ceviche-chaufa-mariscos-pulpo-anticuchero.jpg",
+        id: 104,
+        name: "Pato",
+        category: "platos-a-la-carta",
+        price: 28,
+        description: "Presa de pato en salsa criolla tradicional con yuca o frijoles y arroz.",
+        image: "./images/menu/pato.jpg",
         available: true
-    }
-    ,
-    // --- Rondas ---
+    },
+    {
+        id: 105,
+        name: "Cabrito",
+        category: "platos-a-la-carta",
+        price: 28,
+        description: "Seco de cabrito a la norteña con frijoles, yuca y arroz.",
+        image: "./images/menu/cabrito.jpg",
+        available: true
+    },
+
+    // --- Ronda Marina ---
     {
         id: 110,
-        name: "Mini ronda de ceviche",
-        category: "rondas",
-        price: 55,
-        description: "Ceviche clásico, ceviche en salsa de rocoto, ceviche en salsa de ají amarillo y Leche de tigre.",
-        image: "./images/menu/mini-ronda-ceviche.jpg",
-        available: true
-    },
-    {
-        id: 111,
-        name: "Ronda marina",
-        category: "rondas",
-        price: 60,
-        description: "Ceviche + arroz con marisco o chaufa de mariscos + chicharrón de pescado + causa o leche de tigre.",
+        name: "Ronda Marina",
+        category: "ronda-marina",
+        price: 80,
+        description: "Ceviche + Arroz con Mariscos + Chicharrón de Pescado + 2 Opciones recomendadas por el chef.",
         image: "./images/menu/ronda-marina.jpg",
         available: true
     },
-    {
-        id: 112,
-        name: "Ronda puerto 28",
-        category: "rondas",
-        price: 70,
-        description: "Ceviche + arroz con marisco o chaufa + pulpo de anticuchero + leche de tigre o causa.",
-        image: "./images/menu/ronda-puerto-28.jpg",
-        available: true
-    }
-    ,
-    // --- Piqueos ---
+
+    // --- Duos ---
     {
         id: 120,
-        name: "Choritos a la chalaca",
-        category: "piqueos",
-        price: 20,
-        description: "12 unidades de choritos frescos.",
-        image: "./images/menu/choritos-a-la-chalaca.jpg",
+        name: "Ceviche + Arroz con Mariscos",
+        category: "duos",
+        price: 50,
+        description: "Combinación de ceviche de pescado y arroz con mariscos.",
+        image: "./images/menu/ceviche-arroz-marisco.jpg",
         available: true
     },
     {
         id: 121,
-        name: "Tequeños en salsa de ají de mariscos (12und)",
-        category: "piqueos",
-        price: 20,
-        description: "12 unidades de tequeños en salsa especial de ají de mariscos.",
-        image: "./images/menu/tequenos-aji-mariscos.jpg",
+        name: "Ceviche + Chaufa de Mariscos",
+        category: "duos",
+        price: 50,
+        description: "Combinación de ceviche de pescado y chaufa de mariscos.",
+        image: "./images/menu/ceviche-chaufa-mariscos.jpg",
         available: true
     },
     {
         id: 122,
-        name: "Bolitas de causa (5und)",
-        category: "piqueos",
-        price: 20,
-        description: "5 unidades de bolitas de causa rellenas de pollo.",
-        image: "./images/menu/bolitas-de-causa.jpg",
+        name: "Chicharrón de Pescado + Arroz con Mariscos",
+        category: "duos",
+        price: 50,
+        description: "Combinación de chicharrón de pescado y arroz con mariscos.",
+        image: "./images/menu/chicharron-pescado-arroz-mariscos.jpg",
         available: true
     },
-    {
-        id: 124,
-        name: "Shots de leche de tigre",
-        category: "piqueos",
-        price: 10,
-        description: "5 shots de leche de tigre.",
-        image: "./images/menu/shots-leche-de-tigre.jpg",
-        available: true
-    }
-    ,
+
     // --- Bebidas ---
     {
         id: 130,
-        name: "Agua",
+        name: "Agua San Carlos 600 ml",
         category: "bebidas",
         price: 3,
-        description: "Agua embotellada.",
-        image: "./images/menu/agua.jpg",
+        description: "Agua de mesa sin gas 600 ml.",
+        image: "./images/menu/agua-san-carlos-600ml.jpg",
         available: true
     },
     {
         id: 131,
-        name: "Gordita",
+        name: "Inka Cola 600 ml",
         category: "bebidas",
-        price: 5.5,
-        description: "Gaseosa tamaño gordita.",
-        image: "./images/menu/gaseosa-gordita.jpg",
+        price: 6,
+        description: "Gaseosa Inka Cola personal de 600 ml.",
+        image: "./images/menu/inka-cola-600ml.jpg",
         available: true
     },
     {
         id: 132,
-        name: "Gaseosa 600 ml",
+        name: "Coca Cola 600 ml",
         category: "bebidas",
-        price: 4,
-        description: "Gaseosa 600 ml fría.",
-        image: "./images/menu/gaseosa-600ml.jpg",
+        price: 6,
+        description: "Gaseosa Coca Cola personal de 600 ml.",
+        image: "./images/menu/coca-cola-600ml.jpg",
         available: true
     },
     {
         id: 133,
-        name: "Gaseosa 1 lt",
+        name: "Inka Cola 1L",
         category: "bebidas",
         price: 10,
-        description: "Gaseosa 1 lt fría.",
-        image: "./images/menu/gaseosa-inca-1lt.jpg",
+        description: "Gaseosa Inka Cola de 1 litro.",
+        image: "./images/menu/inka-cola-1l.jpg",
         available: true
     },
     {
         id: 134,
-        name: "Gaseosa 1/5 lt",
+        name: "Coca Cola 1L",
         category: "bebidas",
-        price: 13,
-        description: "Gaseosa 1/5 lt fría.",
-        image: "./images/menu/gaseosa-inca-1-5lt.jpg",
+        price: 10,
+        description: "Gaseosa Coca Cola de 1 litro.",
+        image: "./images/menu/coca-cola-1l.jpg",
         available: true
     },
     {
         id: 135,
-        name: "Pilsen 630 ml",
+        name: "Inka Cola 1.5L",
         category: "bebidas",
-        price: 12,
-        description: "Cerveza Pilsen 630 ml.",
-        image: "./images/menu/pilsen-630ml.jpg",
+        price: 14,
+        description: "Gaseosa Inka Cola de 1.5 litros.",
+        image: "./images/menu/inka-cola-1-5l.jpg",
         available: true
     },
     {
         id: 136,
-        name: "Pilsen chica 310 ml",
+        name: "Coca Cola 1.5 L",
         category: "bebidas",
-        price: 8,
-        description: "Cerveza Pilsen chica 310 ml.",
-        image: "./images/menu/pilsen-chica-310ml.jpg",
+        price: 14,
+        description: "Gaseosa Coca Cola de 1.5 litros.",
+        image: "./images/menu/coca-cola-1-5l.jpg",
         available: true
     },
     {
         id: 137,
-        name: "Cusqueña chica 310 ml",
+        name: "Pilsen Trujillo",
         category: "bebidas",
-        price: 8,
-        description: "Cerveza Cusqueña chica 310 ml.",
-        image: "./images/menu/cusquena-chica-310ml.jpg",
+        price: 10,
+        description: "Cerveza Pilsen Trujillo bien helada.",
+        image: "./images/menu/cerveza-trujillo.jpg",
         available: true
     },
     {
         id: 138,
-        name: "Cusqueña negra chica 310 ml",
+        name: "Pilsen Callao",
         category: "bebidas",
-        price: 8,
-        description: "Cerveza Cusqueña negra chica 310 ml.",
-        image: "./images/menu/cusquena-negra-chica-310ml.jpg",
+        price: 10,
+        description: "Cerveza Pilsen Callao bien helada.",
+        image: "./images/menu/cerveza-pilsen.jpg",
         available: true
     },
     {
         id: 139,
-        name: "Limonada frozen 1 lt",
+        name: "Cusqueña de Trigo",
         category: "bebidas",
-        price: 18,
-        description: "Limonada frozen 1 lt.",
-        image: "./images/menu/limonada-frozen-1lt.jpg",
+        price: 12,
+        description: "Cerveza Cusqueña de Trigo bien helada.",
+        image: "./images/menu/cerveza-trigo.jpg",
         available: true
     },
     {
         id: 140,
-        name: "Limonada frozen 1/2 lt",
+        name: "Cusqueña Negra",
         category: "bebidas",
-        price: 9,
-        description: "Limonada frozen 1/2 lt.",
-        image: "./images/menu/limonada-frozen-1-2lt.jpg",
+        price: 12,
+        description: "Cerveza Cusqueña Negra bien helada.",
+        image: "./images/menu/cerveza-negra.jpg",
         available: true
     },
     {
         id: 141,
-        name: "Chicha morada 1 lt",
+        name: "Jarra de Limonada",
         category: "bebidas",
         price: 15,
-        description: "Chicha morada 1 lt.",
-        image: "./images/menu/chicha-morada-1lt.jpg",
+        description: "Jarra de limonada natural refrescante.",
+        image: "./images/menu/jarra-de-limonada.jpg",
         available: true
     },
     {
         id: 142,
-        name: "Chicha morada 1/2 lt",
+        name: "Jarra de Chicha Morada",
         category: "bebidas",
-        price: 8,
-        description: "Chicha morada 1/2 lt.",
+        price: 15,
+        description: "Jarra de chicha morada tradicional de la casa.",
         image: "./images/menu/jarra-chicha-morada.jpg",
+        available: true
+    },
+    {
+        id: 143,
+        name: "Jarra de Cebada",
+        category: "bebidas",
+        price: 15,
+        description: "Jarra de agua de cebada fresca y natural.",
+        image: "./images/menu/jarra-de-cebada.jpg",
+        available: true
+    },
+    {
+        id: 144,
+        name: "Jarra de Maracuyá",
+        category: "bebidas",
+        price: 15,
+        description: "Jarra de jugo de maracuyá fresco y natural.",
+        image: "./images/menu/jarra-de-maracuya.jpg",
         available: true
     }
 ];
