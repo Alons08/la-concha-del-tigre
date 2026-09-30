@@ -688,7 +688,38 @@ function setupFilters() {
             }
 
             updateActiveFilterButton(menuState.category);
+            button.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
             renderProducts();
+        });
+
+        // Soporte de arrastre con el mouse en desktop
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        menuFilters.addEventListener('mousedown', (e) => {
+            isDown = true;
+            menuFilters.style.cursor = 'grabbing';
+            startX = e.pageX - menuFilters.offsetLeft;
+            scrollLeft = menuFilters.scrollLeft;
+        });
+
+        menuFilters.addEventListener('mouseleave', () => {
+            isDown = false;
+            menuFilters.style.cursor = 'default';
+        });
+
+        menuFilters.addEventListener('mouseup', () => {
+            isDown = false;
+            menuFilters.style.cursor = 'default';
+        });
+
+        menuFilters.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - menuFilters.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            menuFilters.scrollLeft = scrollLeft - walk;
         });
     }
 

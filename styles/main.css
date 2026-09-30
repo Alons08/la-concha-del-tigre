@@ -77,6 +77,11 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
 }
 
 .btn-primary {
@@ -225,31 +230,59 @@ body {
 
 .menu-filters {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 10px 0 20px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 12px;
+    margin: 15px auto 25px;
+    padding: 8px 15px 14px;
+    max-width: 100%;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #17a2b8 rgba(23, 162, 184, 0.1);
+}
+
+/* Scrollbar estilizado y sutil */
+.menu-filters::-webkit-scrollbar {
+    height: 5px;
+}
+
+.menu-filters::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.menu-filters::-webkit-scrollbar-thumb {
+    background: #17a2b8;
+    border-radius: 10px;
 }
 
 .filter-btn {
-    padding: 8px 20px;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 10px 22px;
     background: var(--white);
-    border: 2px solid #17a2b8;
-    border-radius: 8px;
+    border: 1.5px solid #17a2b8;
+    border-radius: 999px;
     color: #17a2b8;
     font-size: 0.95rem;
     font-weight: 600;
-    transition: all 0.3s ease;
+    font-family: inherit;
+    transition: all 0.25s ease;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(23, 162, 184, 0.08);
+    user-select: none;
 }
 
 .filter-btn.active {
     background: #17a2b8;
     color: var(--white);
     border-color: #17a2b8;
-    box-shadow: 0 2px 8px rgba(23, 162, 184, 0.3);
-    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(23, 162, 184, 0.35);
+    transform: translateY(-2px);
 }
 
 .filter-btn:hover:not(.active) {
