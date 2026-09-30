@@ -182,6 +182,24 @@ const products = [
         image: "./images/menu/sudado-de-cabrilla.jpg",
         available: true
     },
+    {
+        id: 53,
+        name: "Chilcano",
+        category: "sudados",
+        price: 15,
+        description: "Concentrado de pescado caliente con cebolla china, culantro y cancha.",
+        image: "./images/menu/chilcano.jpg",
+        available: true
+    },
+    {
+        id: 54,
+        name: "Chilcano Mixto",
+        category: "sudados",
+        price: 18,
+        description: "Concentrado de pescado y mariscos caliente con cebolla china y cancha.",
+        image: "./images/menu/chilcano-mixto.jpg",
+        available: true
+    },
 
     // --- Parihuelas ---
     {
@@ -379,6 +397,15 @@ const products = [
         price: 28,
         description: "Seco de cabrito a la norteña con frijoles, yuca y arroz.",
         image: "./images/menu/cabrito.jpg",
+        available: true
+    },
+    {
+        id: 106,
+        name: "Patita en fiambre",
+        category: "platos-a-la-carta",
+        price: 15,
+        description: "Patita de cerdo marinada en salsa criolla tradicional norteña con yuca.",
+        image: "./images/menu/patita-en-fiambre.jpg",
         available: true
     },
 
